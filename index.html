@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Travel</title>
+    
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+     <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- navbar section starts -->
+        <nav class="navbar">
+            <div class="logo"><a href="#home">Let's<span>Travel</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#book" class="nav-link">Booking</a></li>
+                <li><a href="#package" class="nav-link">Packages</a></li>
+                <li><a href="#service" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#review" class="nav-link">Testimonial</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="media-icons">
+                <a href="#"><i class="fas fa-user" id="login-btn"></i></a>
+                <a href="#"><i class="fas fa-search" id="search-btn"></i></a>
+            </div>
+            <form action="" class="search-bar-box">
+                <input type="search" id="search-bar" placeholder="Search here...">
+                <label for="search-bar" class="fas fa-search"></label>
+            </form>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+    </nav>
+<!-- navbar section ends -->
+
+<!-- home-section starts -->
+<section id="home" class="home">
+    <div class="content">
+        <h2>Always say yes to new adventures.</h2>
+        <p>“Your imagination is your preview of life’s coming attractions.”</p>
+        <a href="#package" class="btn">Discover more</a>
+    </div>
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+    </div>
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<!-- home-section ends -->
+
+<!-- login-sign up form starts -->
+<section class="form" id="formFill">
+    <i class="fas fa-times" id="login-close-btn"></i>
+    <div class="form-container">
+    <div class="tab-header">
+        <div class="active">Sign Up</div>
+        <div>Sign In</div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-body active">
+            <form action="" class="signup">
+                <div class="form-element">
+                    <input type="name" class="login-box" placeholder="Enter Name">
+                </div>
+                <div class="form-element">
+                    <input type="email" class="login-box" placeholder="Enter Mail">
+                </div>
+                <div class="form-element">
+                    <input type="password" class="login-box" placeholder="Enter Password">
+                </div>
+                <div class="form-element">
+                    <button type="submit" value="submit">Sign up</button>
+                </div>
+                <div class="form-element">
+                    <p>Already have an account<a href="#" id="signin">Sign in</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="tab-body">
+            <form action="" class="signin">
+                <div class="form-element">
+                    <input type="email" class="login-box" placeholder="Enter Mail">
+                </div>
+                <div class="form-element">
+                    <input type="password" class="login-box" placeholder="Enter Password">
+                </div>
+                <div class="form-element">
+                    <input type="checkbox" id="rememberme" name="rememberme">
+                    <label for="rememberme">remember me</label>
+                </div>
+                <div class="form-element">
+                    <button type="submit" value="Sign in">Sign in</button>
+                </div>
+                <div class="form-element">
+                        <p>forget password?<a href="#" id="forget-password">Click here</a></p>
+                </div>
+                <div class="form-element">
+                    <p>Create a new account<a href="#" id="signup">Register Now</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- login-sign up form ends -->
+
+<!-- Booking section -->
+<section class="book" id="book">
+    <div class="section-heading">
+            <div class="underline"></div>
+            <h2 class="heading">Book Your Trip Now</h2>
+            <div class="underline"></div>
+        </div>
+    <div class="book-row">
+        <div class="img-box">
+            <img class="book-img" src="images/world_travel.png"  alt="world-travel">
+        </div>
+        <div class="booking-form">
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="From">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Destination">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="No of Guests">
+                </div>
+                <div class="input-box">
+                    <h4>Check-out</h4>
+                    <input type="date" placeholder="No of Guests">
+                </div>
+                <div class="input-box">
+                    <h4>Check-in</h4>
+                    <input type="date" placeholder="No of Guests">
+                </div>
+                <div class="book-btn">
+                    <a href="#" class="book-btn">Book</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- package section starts -->
+    <section class="container package" id="package">
+        <div class="section-heading">
+            <div class="underline"></div>
+            <h2 class="heading">Packages</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="box-container">
+            <!-- first row -->
+            <div class="box">
+                <img src="images/p1-goa.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Goa</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 20,000<span>₹ 30,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p2-mumbai.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Mumbai</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 25,000<span>₹ 30,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p3-delhi.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Delhi</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 30,000<span>₹ 40,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="box">
+                <img src="images/p4-kerala.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Kerala</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 28,000<span>₹ 35,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p5-mahabelshwar.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Mahabaleshwar</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 25,000<span>₹ 32,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p6-lonavla.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Lonavala</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 15,000<span>₹20,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p7-matheran.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Matheran</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 15,000<span>₹20,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p8-alibag.jpg" alt="package-1">
+                <div class="content">
+                    <h4><i class="fas fa-map-marker-alt"></i>Alibag</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, aliquid.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">₹ 15,000<span>₹20,000</span></div>
+                    <div class="package-btn">
+                    <a href="#" >Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- package section ends -->
+
+<!-- service section starts -->
+    <section class="service" id="service">
+        <div class="section-heading">
+            <div class="underline"></div>
+            <h2 class="heading">Services</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="service-box">
+            <div class="box">
+                <div class="content">
+                    <i class="fas fa-hotel"></i>
+                    <h4>Affordable Hotels</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis labore quae provident sint quisquam!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <i class="fas fa-utensils"></i>
+                    <h4>Food and Drinks</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis labore quae provident sint quisquam!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <i class="fas fa-briefcase"></i>
+                    <h4>Business Amenities</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis labore quae provident sint quisquam!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <i class="fas fa-globe-asia"></i>
+                    <h4>Around the World</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis labore quae provident sint quisquam!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <i class="fas fa-plane"></i>
+                    <h4>Fastest Travel</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis labore quae provident sint quisquam!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <i class="fas fa-hiking"></i>
+                    <h4>Adventures</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates debitis labore quae provident sint quisquam!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- service section starts -->
+
+<!-- gallery section starts -->
+    <section class="gallery" id="gallery">
+        <div class="section-heading">
+            <div class="underline"></div>
+            <h2 class="heading">Gallery</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="gallery-box">
+            <div class="box">
+                <img src="images/p1-goa.jpg" alt="card-image1">
+                <div class="gallery-info">
+                    <h4>Road</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, incidunt.</p>
+                    <div class="btn">
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p1-goa.jpg" alt="card-image1">
+                <div class="gallery-info">
+                    <h4>Beach</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, incidunt.</p>
+                    <div class="btn">
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p1-goa.jpg" alt="card-image1">
+                <div class="gallery-info">
+                    <h4>Mountain</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, incidunt.</p>
+                    <div class="btn">
+                        <a href="#" class="btn">See More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- gallery section ends -->
+
+<!-- review section starts -->
+<section class="review" id="review">
+    <div class="section-heading">
+            <div class="underline"></div>
+            <h2 class="heading">Reviews</h2>
+            <div class="underline"></div>
+    </div>
+    <div class="container">
+        <div class="carousel owl-carousel">
+            <div class="card">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/p1-goa.jpg" alt="">
+                    </div>
+                    <div class="review-content">
+                        <h4>John Deep</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aut, non consequatur quo illo totam!</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/p1-goa.jpg" alt="">
+                    </div>
+                    <div class="review-content">
+                        <h4>John Deep</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aut, non consequatur quo illo totam!</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/p1-goa.jpg" alt="">
+                    </div>
+                    <div class="review-content">
+                        <h4>John Deep</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aut, non consequatur quo illo totam!</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="images/p1-goa.jpg" alt="">
+                    </div>
+                    <div class="review-content">
+                        <h4>John Deep</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aut, non consequatur quo illo totam!</p>
+                    </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+</section>
+<!-- review section ends -->
+
+<!-- contact section starts -->
+    <section class="contact" id="contact">
+        <div class="section-heading">
+            <div class="underline"></div>
+            <h2 class="heading">Contact</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-row">
+            <div class="img-box">
+                <img class="contact-img" src="images/contact.png" alt="">
+            </div>
+            <div class="contact-form">
+                <form action="#">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="number" id="number" max="10" placeholder="Enter Mobile Number">
+                </div>
+                <div class="input-box">
+                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Any Message"></textarea>
+                </div>
+                <div class="submit-btn">
+                    <a href="#">Submit</a>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- brand section starts -->
+    <section class="brand-container">
+         <div class="slider slick">
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-1.png" alt="brand1"></a>
+                </div>
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-2.png" alt="brand2"></a>
+                </div>
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-3.png" alt="brand3"></a>
+                </div>
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-4.png" alt="brand4"></a>
+                </div>
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-5.png" alt="brand5"></a>
+                </div>
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-6.png" alt="brand16"></a>
+                </div>
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-7.png" alt="brand7"></a>
+                </div>
+                <div class="brand-box">
+                    <a href="#"><img src="images/brand-8.png" alt="brand8"></a>
+                </div>
+        </div>
+    </section>
+    <!-- brand section ends -->
+
+    <!-- top cursor starts-->
+    <div class="container scroll-top d-block">
+      <i class="fas fa-chevron-up " onclick="topFunction()" id="top-btn"></i>
+    </div>
+    <!-- top cursor end -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="box">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsum ratione quisquam autem recusandae minus expedita beatae illo architecto veniam.</p>
+            </div>
+            <div class="box">
+                <h4>Branch Locations</h4>
+                <div class="footer-link">
+                <a href="#">India</a>
+                </div>
+                <a href="#">USA</a>
+                <a href="#">Russia</a>
+                <a href="#">Japan</a>
+            </div>
+            <div class="box">
+                <h4>Quick Links</h4>
+                <a href="#">home</a>
+                <a href="#">booking</a>
+                <a href="#">package</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">reviews</a>
+                <a href="#">contact</a>
+            </div>
+             <div class="box">
+                <h4>follow us</h4>
+                 <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                 <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+                 <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+                 <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                 <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+        <div class="credit">
+            <h2>created by <span>&#169; 2021 silencer</span> | All Rights Reserved</h2>
+        </div>
+
+        
+    </section>
+    <!-- footer section ends -->
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Owl carousel CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- External JS -->
+    <script src="js/index.js"></script>
+</body>
+</html>
